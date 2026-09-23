@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Custom hero background */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa, #e9f2ff);
+}
+
+/* Give the hero enough height */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero img {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* Small-screen adjustment */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}

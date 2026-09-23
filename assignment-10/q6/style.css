@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.card {
+    max-width: 900px;
+    margin: auto;
+}
+
+.summary {
+    min-height: 150px;
+}
