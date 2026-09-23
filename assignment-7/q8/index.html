@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model</h1>
+        <p>Understanding Content, Padding, Border and Margin</p>
+    </header>
+
+    <main>
+        <section class="box-container">
+
+            <article class="box default-box">
+                <div class="content">
+                    <h2>Default Box</h2>
+                    <p>
+                        This box uses the default content-box sizing model.
+                    </p>
+                </div>
+            </article>
+
+            <article class="box border-box">
+                <div class="content">
+                    <h2>Border Box</h2>
+                    <p>
+                        This box uses box-sizing: border-box.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="description">
+            <h2>Box Model Layers</h2>
+            <p>
+                Every element contains content, padding, border and margin.
+                Padding creates space inside the border, while margin creates
+                space outside the border.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CSS Box Model Showcase</p>
+    </footer>
+
+</body>
+</html>

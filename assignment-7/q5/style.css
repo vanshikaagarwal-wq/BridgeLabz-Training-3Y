@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Attribute selector: selects text input */
+input[type="text"] {
+    border: 2px solid #3498db;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+/* Attribute selector: selects email input */
+input[type="email"] {
+    border: 2px solid #9b59b6;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+/* Attribute selector: selects links beginning with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Pseudo-class: changes style when link is hovered */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-class: changes input when focused */
+input:focus {
+    outline: 3px solid #f1c40f;
+}
+
+/* Pseudo-class: selects every second list item */
+li:nth-child(2) {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Pseudo-element: adds content before heading */
+.list-demo h2::before {
+    content: "★ ";
+    color: #f39c12;
+}
+
+/* Pseudo-element: adds content after heading */
+.list-demo h2::after {
+    content: " ★";
+    color: #f39c12;
+}
+
+/* Child combinator: selects direct p children */
+.parent > p {
+    background-color: #e8f6ff;
+    padding: 10px;
+}
+
+/* Adjacent sibling combinator: selects p immediately after span */
+span + p {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+/* General sibling combinator: selects p after span */
+span ~ p {
+    border-left: 4px solid #8e44ad;
+    padding-left: 10px;
+}
+
+/* Descendant combinator: selects all p inside parent */
+.parent p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    main {
+        margin: 20px auto;
+    }
+
+    input,
+    a {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}

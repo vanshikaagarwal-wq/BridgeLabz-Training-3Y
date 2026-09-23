@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.transform-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.transform-box {
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+    background-color: white;
+    border: 3px solid #333;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: all 0.4s ease;
+}
+
+.transform-box h2 {
+    margin-bottom: 10px;
+}
+
+/* Rotate transform */
+.rotate:hover {
+    transform: rotate(10deg);
+}
+
+/* Scale transform */
+.scale:hover {
+    transform: scale(1.15);
+}
+
+/* Translate transform */
+.translate:hover {
+    transform: translateY(-20px);
+}
+
+/* Skew transform */
+.skew:hover {
+    transform: skew(-8deg);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .transform-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .transform-box {
+        width: 100%;
+        max-width: 250px;
+    }
+}

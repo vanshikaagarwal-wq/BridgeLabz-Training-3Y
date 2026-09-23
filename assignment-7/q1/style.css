@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    flex: 1;
+    padding: 50px 20px;
+}
+
+/* Flexbox aligns all boxes horizontally */
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    width: 200px;
+    min-height: 160px;
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Smooth hover transition */
+    transition: border-color 0.3s ease;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+}
+
+/* Different border styles */
+.solid {
+    border: 5px solid #333;
+    padding: 20px;
+}
+
+.dashed {
+    border: 5px dashed #555;
+    padding: 30px;
+}
+
+.double {
+    border: 6px double #333;
+    padding: 15px;
+}
+
+.groove {
+    border: 6px groove #777;
+    padding: 25px;
+}
+
+/* Rounded corner example */
+.rounded {
+    border: 5px solid #333;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/* Hover changes border color */
+.box:hover {
+    border-color: #007bff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
