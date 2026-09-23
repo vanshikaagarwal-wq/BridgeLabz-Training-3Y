@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+/* Header - Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    background-color: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main - Grid */
+main {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+
+    padding: 40px;
+}
+
+/* Article */
+article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+article h1 {
+    margin-bottom: 15px;
+
+    animation: fadeIn 1.5s ease;
+}
+
+article > p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Three boxes - Flexbox */
+.boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 25px;
+
+    background-color: #eeeeee;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+/* Sidebar */
+aside {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+aside h2 {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px;
+
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+}
