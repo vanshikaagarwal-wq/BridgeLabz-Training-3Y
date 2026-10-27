@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+        }
+
+        #output {
+            white-space: pre-line;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Library Management System</h1>
+    <p>Manage books, issue books and return them.</p>
+
+    <section>
+        <h2>Search Book by ISBN</h2>
+
+        <input type="text" id="isbn" placeholder="Enter book ISBN">
+
+        <button onclick="issueBookByISBN(document.getElementById('isbn').value)">
+            Issue Book
+        </button>
+
+        <button onclick="returnBookByISBN(document.getElementById('isbn').value)">
+            Return Book
+        </button>
+
+        <button onclick="displayAvailableBooks()">
+            Show Available Books
+        </button>
+    </section>
+
+    <section>
+        <h2>Library Details</h2>
+        <p id="output">Click "Show Available Books" to view books.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```

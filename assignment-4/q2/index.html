@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration</h1>
+
+    <form id="studentForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="example@domain.com">
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" placeholder="10-digit phone number">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password">
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="message" aria-live="polite"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

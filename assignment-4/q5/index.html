@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        form, #ticket {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movie Ticket Booking</h1>
+
+    <form id="bookingForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your email">
+
+        <label for="seats">Number of Seats (1–10)</label>
+        <input type="number" id="seats" placeholder="Enter seats">
+
+        <button type="submit">Book Tickets</button>
+    </form>
+
+    <p id="message" aria-live="polite"></p>
+
+    <section id="ticket" hidden>
+        <h2>Booking Confirmed!</h2>
+        <p id="ticketDetails"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
